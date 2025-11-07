@@ -29,6 +29,7 @@ IMAGE_INSTALL:append = " \
     kernel-module-bh1750 \
     kernel-module-sht3x \
     kernel-module-ledpump \
+    kernel-module-userled \
     wifi-auto \
     i2c-tools \
     nano \
