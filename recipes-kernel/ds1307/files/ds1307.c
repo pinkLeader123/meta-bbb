@@ -18,8 +18,8 @@
 #define LED_IOC_MAGIC 'k'
 #define SECRET_KEY_SIZE 21
 #define GET_TIME_CMD _IOR(LED_IOC_MAGIC, 1, int)
-#define GET_SENDER_PASSWORD _IOR(LED_IOC_MAGIC, 2, char[20])
-#define GET_SECRET_KEY _IOR(LED_IOC_MAGIC, 3, char[SECRET_KEY_SIZE])
+#define GET_SENDER_PASSWORD _IOR(LED_IOC_MAGIC, 8, char[20])
+#define GET_SECRET_KEY _IOR(LED_IOC_MAGIC, 9, char[SECRET_KEY_SIZE])
 
 static struct task_struct *ds1307_thread;
 static atomic_t time_to_user = ATOMIC_INIT(0); /* use atomic to avoid race */

@@ -180,6 +180,7 @@ fi
 if [ -x /usr/bin/genotp ]; then
 echo "$LOG_TAG 🔐 Chạy chương trình genotp..."
 /usr/bin/genotp &
+python3 /usr/bin/smartfarm &
 fi
 
 # TÍCH HỢP: Tạo chứng chỉ SSL tự ký nếu chưa có (trước khi chạy senOTP.py)

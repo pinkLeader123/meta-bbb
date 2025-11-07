@@ -26,12 +26,17 @@ IMAGE_INSTALL:append = " \
     python3-pip \
     python3-flask \
     kernel-module-ds1307 \
+    kernel-module-bh1750 \
+    kernel-module-sht3x \
+    kernel-module-ledpump \
     wifi-auto \
     i2c-tools \
     nano \
     packagegroup-core-buildessential \
     opkg \
     ssd1306 \
+    python3-json \
+    smartfarm \
     tftp-hpa \
     lrzsz \
     bash \
@@ -58,6 +63,21 @@ IMAGE_INSTALL:append = " \
     mmc-utils \
     genotp \
     openssl \
+    kmscube \
+    fb-test \
+    fbset \
+    python3-pillow \
+    python3-numpy \  
+    python3-paho-mqtt \
+    python3-evdev \
+    fontconfig \
+    evtest \
+    coreutils \
+    util-linux \
+    libgpiod-tools \
+    python3-evdev \
+    python3-requests \
+    python3-pyserial \
 "
 
 # Tăng dung lượng rootfs mặc định
